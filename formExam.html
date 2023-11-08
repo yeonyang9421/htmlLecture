@@ -1,0 +1,98 @@
+
+<html>
+<head>
+<title></title>
+<style>
+fieldset{margin: 15px 10px;color:deeppink; background-color:pink; width:600; background-color:#eeeeee}
+li{width:180px;}
+</style>
+</head>
+<body>
+  <form action="#" method=post>
+    <fieldset>
+      <legend> 배송지 주소</legend> 
+      <ol type=1>  
+        <li> 주소 <textarea cols=50 rows=4></textarea><br>
+        <li> 우편번호 <input type=text name=s /><br>
+        <li>국가 <input type=text name=nation /><br>
+      </ol>
+      
+    </fieldset><P>
+    <fieldset >
+      <legend> 카드 정보 입력 </legend>
+      <ol>
+        <li>
+          <fieldset style=width:300><legend> 카드 타입 </legend>
+        <ol>
+          <li> <input type=radio name=card value=visa />visa
+          <li> <input type=radio name=card value=AmEx />AmEx
+          <li> <input type=radio name=card value=mastercard />Marstercard
+        </ol>
+          </fieldset>
+        <li> 카드번호 <input type=number name=num>
+        <li> CRC 번호 <input type=number name=CRC>
+        <li> 카드 소유자 이름 <input type=text name=name placeholder="카드상의 이름">
+        </ol>
+    </fieldset>
+    <fieldset>
+    <input type=submit value=구매>
+    </fieldset>
+     
+  </form>
+  
+  <table width=800 height=400>
+    <tr height=100>
+        <th height=100 colspan=2 backgroundColor=#cccccc>
+        <div> 상단 메뉴 부분 </div></th>
+    </tr>
+    <tr height=300>
+        <td bgcolor=#999900 width=200> left menu </td>
+        <td> 본문 내용 들어갈 부분
+        <iframe src=http://www.daum.net width=600 height=300></iframe> </td>
+   </tr>
+   <tr height=100 bgcolor=#999999>
+   <td colspan=2> copyright part </td>
+   </tr>
+   </table>
+   <p><br><br><br>
+        
+  
+
+이메일 : <input type="email" name=email /><p>
+비밀번호 : <input type="password" name=pass /><p>
+숫자 : <input type="number" min=1 max=10 step=2  name=name /><p>
+범위 : <input type="range" min=1 max=10 step=2 name=range /><p>
+색상 : <input type="color" name=color /><p>
+체크박스 : <input type="checkbox" name=check /><p>
+라디오 : <input type="radio" name=radio /><p>
+date : <input type="datetime" name=date /><p>
+localdatetime : <input type="datetime-local" name=localdatetime /><p>
+month : <input type="month" name=month /><p>
+week : <input type="week" name=week /><p>
+time : <input type="time" name=time /><p>
+button : <input type="button" name=time value=PRESS onclick={alert(gpffh)} /><p>
+file : <input type="file" name=file /><p>
+image : <input type="image" name=image /><p>
+<select name="food">
+  <option value="apple"> apple </option>
+  <option value="banana"> banana </option>
+  <option value="pear" selected> pear </option>
+  <option value="mango"> mango </option>
+</select>
+<P>
+<fieldset width=300>
+<legend> information </legend>
+  name: <input type=text><br>
+  phone-num : <input type=text><br>
+  address : <input type=text><br>
+</fieldset>
+
+submit : <input type="submit" name=submit /><p>
+reset : <input type="reset" name=reset /><p>
+
+</form>
+  
+  
+
+</body>
+</html>

@@ -1,73 +1,98 @@
-<html>
-    <head>
-        <title> 제목 들어가는 곳</title>
-    </head>
-    <body>
-        <a href="./exam.html" target="_blank"> test </a><br/>
-        한 줄<p>
-        세 줄<br/>
-        네 줄<br />
-        다섯째 줄<br />
-        ddddd
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+<script>
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+  
+</head>
+<body style="margin: 25px;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="formEx.html" target="here">form Tag</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="exam.html" target="here">basic tag</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="basic1.html" target="here">font tag</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <iframe width="100%" height="400px" name="here" src="exam.html"></iframe>
+    <h1>Hello, world!</h1>
+    <hr class="border border-danger border-2 opacity-50">
+    <hr class="border border-primary border-3 opacity-75">
+    <button type="button" class="btn btn-primary">이글루</button>
+    <button type="button" class="btn btn-secondary" onclick="">네이버</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
 
-        <h1> 헤드라인 1</h1>
-        <h6> 헤드라인 6</h6>
+    <button type="button" class="btn btn-link">Link</button>
 
-        <ul>
-            <li> 사과</li>
-            <li> 배</li>
-            <li> 바나나</li>
+    <div class="dropdown" style="margin: 20px;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#" style="color :#99cc00">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
-        <ol>
-            <!-- 설명부분 -->
-            <li> 사과</li>
-            <li> 배</li>
-            <li> 바나나</li>
-        </ol>
+      </div>
+      <form style="width:500px">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
-        <hr size="10" noshade/>
-
-        <img src="https://avatars.githubusercontent.com/u/44351775?v=4"/>
-        <img src="44351775.jpg"/>
-
-        <table width="250px" height="300px" >
-            <tr bgcolor="pink" border="2px" borderColor="black"><td>1행 1열</td><td>1행 2열</td></tr>
-            <tr bgcolor="#99cc00" border="2px" borderColor="black"><td>1행 1열</td><td>1행 2열</td></tr>
-        </table>
-
-        <pre>
-            한
-            줄
-            두
-            
-            줄
-
-        </pre>
-        <font size="1"> 
-            작은 글자
-        </font>
-        <font size="7"> 
-            큰 글자
-        </font><br/>
-        <div style="font-size: 5px;"> div 작은 글자</div>
-        <div style="font-size: 500px;"> div 큰 글자</div>
-        <a href="https://www.naver.com"> 네이버 </a>
-        <a href="https://www.naver.com"> 
-            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MDlfMyAg%2FMDAxNjkxNTY2NDgzMTg1.kfLiDbFBLXNwPuBcy3teaHMN6zPh_x4Wfrpxsdd5IW4g.0xt1AoOo4GllVl5-iA1uMQosolicYN2s9Mdh0byi5xEg.PNG.kul4578%2F%25B3%25D7%25C0%25CC%25B9%25F6_%25B7%25CE%25B0%25ED.PNG&type=sc960_832" width="104" height="142"/>    
+      <img src="jimin.png" class="img-thumbnail" alt="지미니" width="50px"><br/>
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Link with href
         </a>
-        <p>
-        <strong> 글자 두껍게</strong><br/>
-        <b> 글자 두껍게</b> <br/>
-        <i> 기울림체</i>
-        <em> 기울림</em>
-
-        </p>
-        <div style="font-weight: bold;"> 글자 두껍게</div>
-     
-        <marquee direction="down" width="500" height="500" scrollamount="50">
-            <div style="color:orange; font-size:25px; background-color:yellow;"> 
-                움직이는 글자
-            </div>
-        </marquee>
-    </body>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      </p>
+      <p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+    </p>
+    <div style="padding-bottom: 550px;"></div>
+  </body>
 </html>

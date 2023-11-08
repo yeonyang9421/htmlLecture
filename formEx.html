@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title> </title>
+
+    <style>
+        fieldset {
+            margin: 15;
+            color: deeppink;
+            background-color: pink;
+            width : 400;
+        }
+        .ex1{
+            color : red;
+        }
+    </style>
+    <script>
+        let value = 1
+       const testFn = () =>{
+        alert(`hello : ${value}`);
+       }
+    </script>
+</head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend> 배송지 주소</legend>
+                <ol>
+                    <li>
+                        주소  <textarea cols="50" rows="4"></textarea>
+                    </li>
+                    <li> 우편번호 <input type=text name=zipCode</li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend> 카드 정보 입력</legend>
+                <ol>
+                    <li>
+                        <fieldset style="width:300; background-color:orange;">
+                            <legend> 카드 타입</legend>
+                            <ol>
+                                <li style="background-color: aquamarine;"> <input type=radio name=card value=visa /> visa</li>
+                                <li> <input type=radio name=card value=AmEX /> AmEX</li>
+                                <li> <input type=radio name=card value=Marstercard /> Marstercard</li>
+                            </ol>
+                        </fieldset>
+                    </li>
+                    <li class="ex1"> 신청갯수 <input type=number name=num/></li>
+                    <li> 우편번호 <input type=text name=zipCode/></li>
+                </ol>
+            </fieldset>
+
+            이메일: <input type=email name=email/><br/>
+            비밀번호: <input type=password name=password/><br/>
+            숫자: <input type=number name=number min="-5" max="5" step="2" value="-3"/><br/>
+            범위: <input type=range name=range min="-5" max="5" step="2" value="-3"/><br/>
+            색상 : <input type="color" name="color"/><br/>
+            Please select your hobby : <br/> <input type="checkbox" name="piano" value="piano"/> Play the Piano<br/>
+                    <input type="checkbox" name="youtube" value="youtube"/> Watch Youtube<br/>
+            Please select your sex : <br/>
+            <input type="radio" name="sex" value="female"/> 여성 <br/>
+            <input type="radio" name="sex" value="male"/> 남성 <br/>
+            date : <input type="datetime-local"/> <br/>
+            month : <input type="month"/> <br/>
+            week : <input type="week"/> <br/>
+            time : <input type="time"/> <br/>
+            button : <input type="button" value="Click"/> <br/>
+            <button onclick="testFn()"> click me</button>
+    </from>
+    </body>
+
+</html>
+

@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title></title>
+        <script>
+         
+            const test2Click = () => {
+                alert("알림이다")
+            }
+        </script>
+        <style>
+            fieldset {
+                background-color: pink;
+            }
+            .here{
+                color : red
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>  폴라 가입서 </legend>
+                <ol style="background-color: aqua;">
+                    <li>
+                        이름 : <input type="text" name="name">
+                    </li>
+                    <li class="here">
+                        비밀번호 : <input type="password" name="password"/>
+                    </li>
+                    <li>
+                        취 미 : <input type="checkbox" name="hobby" value="piano"/>피아노
+                        <input type="checkbox" name="hobby" value="piano"/>축구
+                    </li>
+                    <li class="here">
+                        성별 : <input type="radio" name="sex" value="female"/>여성
+                        <input type="radio" name="sex" value="male"/>남성
+                    </li>
+                </ol>
+            </fieldset>
+
+
+            <button onclick="test2Click()"> 알림 창 띄우기</button>
+        </form>
+ 
+    
+    </body>
+</html>
