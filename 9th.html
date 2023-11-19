@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title></title>
+     <style>
+            body{
+                background-color: #b8c6db;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+
+        </div>
+       <script>
+            console.log("안녕하세요");
+            console.log(123);
+            console.log("연성희", 123);
+            let str = "string"; //문자 = string
+            let value=456; //숫자 = number
+            let arr = [1, 2, 3, 4, 5]; //  배열 = arry
+            let result = value + 50;
+
+            let inputNum = 32;
+            if(inputNum % 2 == 0){
+                console.log("짝수입니다.");
+            }else{
+                console.log("홀수입니다.");
+            };
+
+            let  date = new Date();
+            let hours = date.getHours();
+
+            if(hours < 11 ){
+                console.log("아침 먹을 시간입니다.");
+                
+            }else if(hours < 15) {
+                console.log("점심 먹을 시간입니다.");
+                
+            }else{
+                console.log("저녁 먹을 시간입니다.");
+                
+            }
+
+            let test;
+            test = typeof(test) != "undefined" ? test : "초기화_1";
+            console.log(test);
+            test = typeof(test) != "undefined" ? test : "초기화_2";
+            console.log(test);
+
+
+            let output = "";
+            for(let i = 0; i < 10; i++){
+                for(let j = 0; j<i + 1; j++){
+                    output += " * ";
+                }
+                output += "\n";
+            }
+
+            console.log(output);
+        </script>
+   
+
+    </body>
+
+</html>
