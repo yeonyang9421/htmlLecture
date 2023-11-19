@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title></title>
+     <style>
+            body{
+                background-color: #b8c6db;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+             .container{
+                width : 500px;
+                height : 400px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px 2px rgba(100, 100, 100, 1);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                overflow: hidden;
+            }
+          h2{
+                padding-top: 40px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+             ul{
+                list-style-type: none;
+            }
+            ul li{
+                margin: 16px;
+            }
+          ul li label{
+                font-size: 18px;
+            }
+            button{
+                background-color: #8e44ad;
+                height:50px;
+                width : 100%;
+                color : white;
+                font-size: 20px;
+                border: none;
+            } 
+            
+        </style>
+        <script>
+            function sendFn () {
+            const result =  document.querySelectorAll(".quiz");
+            // console.log("result", result);
+
+            result.forEach(el=>{
+                console.log("el값 :", el);
+                if(el.checked && el.value === "d"){
+                    console.log("맞았습니다.")
+
+                }else{
+                    console.log("틀렸습니다.")
+                }
+            })
+            }
+            // const sendFn2 = () => {
+
+            // }
+
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <!-- 질문 들어갈 부분 -->
+                <h2> 우리 회사 이름은 뭘까요?</h2>
+                <ul>
+                    <li> 
+                        <input type="radio" name="quiz" value="a" class="quiz">
+                        <label> 영내셔널 </label>
+                    </li>
+                    <li> 
+                        <input type="radio" name="quiz" value="b" class="quiz">
+                        <label> 영은내셔널 </label>
+                    </li>
+                    <li> 
+                        <input type="radio" name="quiz" value="c" class="quiz">
+                        <label> 영인터 </label>
+                    </li>
+                    <li> 
+                        <input type="radio" name="quiz" value="d" class="quiz">
+                        <label> 영인터내셔널 </label>
+                    </li>
+                </ul>
+            </div>
+                <!-- 보내기 버튼 넣을 부분 -->
+                <button onclick="sendFn()" > 보내기 </button>
+
+
+        </div>
+        <!-- <script>
+            console.log("안녕하세요");
+            console.log(123);
+            console.log("연성희", 123);
+            let str = "string"; //문자 = string
+            let value=456; //숫자 = number
+            let arr = [1, 2, 3, 4, 5]; //  배열 = arry
+            let result = value + 50;
+        </script> -->
+   
+
+    </body>
+
+</html>

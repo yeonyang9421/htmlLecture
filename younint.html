@@ -11,6 +11,7 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" 
     crossorigin="anonymous">
     </script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                         <a class="nav-link" href="#three">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#four">SHOP</a>
+                        <a class="nav-link" href="https://poluv.polapolar.com/">SHOP</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#five">Link</a>
@@ -79,6 +80,23 @@
     
         <script src="src/index.js">
         </script>
+    <div class="locationWrap">
+        <p class="title">오시는 길</p>
+        <p class="txt">(16967) 경기도 용인시 기흥구 신갈로 121 영인터내셔널</p>
+        <div class="map_area" >
+            <div id="daumRoughmapContainer1699423968118" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        </div>
+    </div>
+    <script > //카카오 지도 
+			
+        new daum.roughmap.Lander({
+            "timestamp" : "1699423968118",
+            "key" : "2gr43",
+            "mapWidth" : "1197",
+            "mapHeight" : "600"
+        }).render();
+    </script>
+        
     </body>
     
     </html>
