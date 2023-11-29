@@ -10,12 +10,67 @@
             }
             
         </style>
-    </head>
-    <body>
-        <div class="container">
+        <script>
+            //   function onShowHello () {
+            //     let name="연성희"
+            //    container.innerHTML = ` <h2>${name}님 안녕하세요..</h2> `;
+            //   }
 
-            개발자모드 콘솔에서 확인해보세요
+            //   const form2 = document.getElementById("form");
+            //   const grade2 = document.getElementById("grade");
+            //   form2.addEventListener("submit", (e) => {
+            //   e.preventDefault();
+
+            //     });         
+        
+    function onSayHello() {
+     console.log("안녕하세요")
+     container.innerHTML = ` <img src=https://youngintbasecamp2lrs.blob.core.windows.net/block/v2/379c97aa-8b16-4f3d-985e-933a2e2e6fc5-origin.png /> `;
+    }
+
+        </script>
+    </head>
+
+    <body style="display: flex; flex-direction: column;">
+           <h1>
+               개발자모드 콘솔에서 확인해보세요. 
+           </h1> 
+        <div id="container">
+
         </div>
+    
+        <button onclick="onSayHello()"> 인사 보기</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <form id="form">
+                <input
+                    type="text" id="grade" class="grade"/>
+            </form> -->
        <script>
             console.log("안녕하세요");
             console.log(123);
@@ -32,18 +87,30 @@
                 console.log("홀수입니다.");
             };
 
-            let  date = new Date();
-            let hours = date.getHours();
 
-            if(hours < 11 ){
-                console.log("아침 먹을 시간입니다.");
-                
-            }else if(hours < 15) {
+            let date = new Date();
+            let hours = date.getHours();
+            console.log("hours", hours);
+
+           if(hours < 11 ) {
+               console.log("아침 먹을 시간입니다.");
+           }else if(hours < 15) {
                 console.log("점심 먹을 시간입니다.");
-                
             }else{
                 console.log("저녁 먹을 시간입니다.");
-                
+            }
+
+            let score=87;
+            if (score >= 90) {
+                console.log("A");
+            } else if (score >= 80 && score > 70) {
+                console.log("B");
+            } else if (score >= 70 && score > 60) {
+                console.log("C");
+            } else if (score >= 60 && score > 60) {
+                console.log("D");
+            } else {
+                console.log('F');
             }
 
             let test;
@@ -53,6 +120,30 @@
             console.log(test);
 
 
+            for(let i = 1; i < 10; i++){
+                console.log(i +"\n" )
+            }
+
+            //삼항 연산자
+            let temp=22;
+            console.log(temp % 2 === 0 ? "삼항 짝수" : "삼항 홀수");
+
+
+            //if문
+            if(temp % 2 === 0){
+                console.log("if 짝수")
+            }else{
+                console.log("if 홀수")
+            }
+
+
+
+
+            console.log( "숙제 : 7단 출력 \n" )
+            for(let i = 1; i < 10 ; i++) {   
+             console.log(7 + " X " + i + " = " + (7*i) + "\n") ;  
+            }
+
             let output = "";
             for(let i = 0; i < 10; i++){
                 for(let j = 0; j<i + 1; j++){
@@ -60,11 +151,9 @@
                 }
                 output += "\n";
             }
-
             console.log(output);
         </script>
    
-
     </body>
 
 </html>
