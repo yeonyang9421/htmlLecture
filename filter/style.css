@@ -1,0 +1,32 @@
+body{font-size:12px;
+background-color: red;}
+
+img{
+  max-width:400px;
+}
+
+.divA{
+  width:400px;
+  height:220px;
+  background-color:#aaaaaa;
+}
+
+.divB{
+  width:400px;
+  height:220px;
+ background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px
+);
+}
+
+.flex{
+  display:flex;
+}
+
+.inline{
+  display:inline-block;
+}

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script>
+var canvasA = document.getElementById("canvasA");
+var canvasB = document.getElementById("canvasB");
+var image = new MarvinImage();
+
+image.load("https://i.imgur.com/ZcCe0eC.jpg", function(){
+		image.draw(canvasA);
+		Marvin.colorChannel(image, image, 14, 0, -8);
+		image.draw(canvasB);
+	});
+
+
+        </script>
+        <style>
+canvas{
+  display:inline-block;
+}
+
+body{
+  font-size:12px;
+}
+        </style>
+    </head>
+
+    <body>
+
+        by <a href="https://www.marvinj.org">www.marvinj.org</a></br>
+        <script src="https://www.marvinj.org/releases/marvinj-0.9.js"></script>
+        <div style="display:flex;">
+        <canvas id="canvasA" width="300" height="156"></canvas><br/>
+        <canvas id="canvasB" width="300" height="156" style="display:inline-block"></canvas>
+        </div>
+
+    </body>
+
+
+</html>
+
+
